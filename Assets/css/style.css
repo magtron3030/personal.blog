@@ -1,0 +1,59 @@
+* {
+   margin:0;
+   padding:0; 
+ }
+
+ header {
+   display: block;
+   border-bottom: 7px solid black;
+   margin-top: 75px;
+ }
+
+.thick-line {
+   position: fixed;
+   top: 0;
+   bottom: 0;
+   width: 5px; /* Adjust the width as needed */
+   background-color: black; /* Change the color as needed */
+   margin-left: 500px;
+}
+
+ body {
+   background-color: tan;
+ }
+
+ .myName {
+   position: absolute;
+   padding: 10px;
+   margin-left: 90px;
+ }
+
+ main {
+   position: absolute;
+ }
+
+ .flying {
+   position: absolute;
+   width: 300px;
+   height: 300;
+   border-radius: 300px;
+   margin: 95px
+ }
+
+ aside {
+   display:flex;
+   flex-direction: column;
+   text-align: end;
+   
+   padding: 50px;
+}
+
+h2 {
+   font-size: 35px;
+   margin-bottom: 100px;
+
+}
+
+ul {
+   list-style-type: none;
+}

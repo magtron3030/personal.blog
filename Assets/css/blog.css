@@ -1,0 +1,83 @@
+* {
+   margin:0;
+   padding:0; 
+ }
+
+ header {
+  display: block;
+  border-bottom: 7px solid black;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+
+ body {
+   background-color: tan;
+ }
+
+
+ .sun {
+   font-size: 50px;
+   display: flex;
+   justify-content: end;
+   margin-right: 25px;
+  
+}
+
+ .btn {
+   background-color: forestgreen;
+   border: none;
+   color: beige;
+   padding: 10px 20px;
+   font-size: 20px;
+   display: flex;
+   justify-content: end;
+   margin-left: 40px;
+}
+
+ .myblog {
+   font-size: 50px;
+   color: beige;
+   display: flex;
+   margin-right: 600px;
+   padding: 20px 10px;
+ }
+
+ .main {
+   padding: 10px;
+ }
+
+.container {
+   border: 3px solid black; /* Border around the container */
+   padding: 10px; /* Add padding inside the container for spacing */
+   margin: 5px;
+   margin-top: 15px;
+ }
+ 
+h2, div {
+   margin: 0; /* Remove default margin for h1 and div */
+ }
+
+ h2 {
+   display: block; /* Make the h2 a block-level element */
+   border-bottom: 1px solid black; /* Add a bottom border to create the underline effect */
+   margin-bottom: 10px; /* Add some space below the h2 */
+ }
+
+ .madewith {
+   padding: 10px;
+   display: flex;
+   justify-content: center;
+ }
+
+ ul, li {
+   padding: 10px;
+   list-style-type: none;
+   font-weight: bold;
+ }
+
+ footer {
+   display: block;
+   border-top: 7px solid black;
+ }
