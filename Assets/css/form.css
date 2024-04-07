@@ -1,0 +1,93 @@
+* {
+   margin:0;
+   padding:0; 
+ }
+
+ header {
+   display: block;
+   border-bottom: 7px solid black;
+   margin-top: 25px;
+ }
+ 
+
+ .sun {
+   font-size: 50px;
+   display: inline-block;
+  
+}
+
+.thick-line {
+   position: fixed;
+   top: 0;
+   bottom: 0;
+   width: 5px; /* Adjust the width as needed */
+   background-color: black; /* Change the color as needed */
+   margin-left: 500px;
+}
+
+ body {
+   background-color: tan;
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+ }
+
+ .maggiesblog{
+   display: inline-block;
+   margin-left: 50px;
+ }
+
+ .blogquestion{
+   display: inline-block;
+   margin-left: 500px;
+   font-size: 30px;
+ }
+
+ main {
+   position: absolute;
+ }
+
+ .flying {
+   position: absolute;
+   width: 300px;
+   height: 300;
+   border-radius: 300px;
+   margin: 80px;
+ }
+
+ aside {
+   display:flex;
+   flex-direction: column;
+   text-align: end;
+   padding: 50px;
+}
+
+form {
+   position: absolute;
+   margin-left: 600px;
+}
+
+ul {
+   list-style-type: none;
+}
+
+#submitbtn {
+   background-color: darkgreen;
+   color: beige;
+   padding: 10px 20px;
+   border: none;
+}
+
+#name {
+   width: 700px;
+   margin: 5px
+}
+
+#title {
+   width: 700px;
+   margin: 5px;
+}
+
+#content {
+   width: 700px;
+   height: 500px;
+   margin: 5px;
+}

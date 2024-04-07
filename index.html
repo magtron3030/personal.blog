@@ -4,7 +4,7 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Maggie's Blog</title>
-   <link rel="stylesheet" href = "./Assets/css/style.css">
+   <link rel="stylesheet" href = "./Assets/css/form.css">
 </head>
 
 
@@ -13,16 +13,20 @@
 <body>
    <header>
       <div class="thick-line"></div>
+      <div class="container"></div> 
+         <div class="sun">&#127775</div>
+      <h1 class = "maggiesblog">Maggie's Blog</h1>
+      <h2 class = "blogquestion">What would you like to blog about?</h2>
    </header>
 
    <main>
-      <h1 class = "myName">Maggie's Blog</h1>
+     
          <figure>
             <img class="flying" src= "./Assets/css/5714DAEE-0575-405E-A018-E259223B658E_1_105_c.jpeg" alt = "flying airplane" >
          </figure>
    </main>
    <aside>
-      <h2>What would you like to blog about?</h2>
+      
       <form>
          <ul>
            <li>
@@ -30,22 +34,25 @@
              <input type="text" id="name" name="user-name">
            </li>
            <li>
-             <label class="text-right" for="Title">Title</label>
+             <label class="text-right" for="Title">Title:</label>
              <input type="text" id="title" name="title">
            </li>
            <li>
-             <label class="text-right" for="Content">Content</label>
+             <label class="text-right" for="Content">Content:</label>
              <input type="text" id="content" name="content">
            </li>
         </ul>
          <div class="text-center">
-           <button type="submit">SUBMIT</button>
+           <button id="submitbtn" type="submit">SUBMIT</button>
          </div>
        </form>
 
 
    </aside>
+   
    <script src= "./Assets/js/form.js"></script>
+   
    <script src="./Assets/js/logic.js"></script>
+
 </body>
 </html>
