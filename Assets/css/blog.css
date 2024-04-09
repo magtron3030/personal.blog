@@ -85,14 +85,14 @@ h2, div {
  }
 
  .madewith {
-   color: rgb(160, 112, 120);
+   color: beige;
    padding: 10px;
    display: flex;
    justify-content: center;
  }
 
  ul, li {
-   color: rgb(160, 112, 120);
+   color: beige;
    padding: 10px;
    list-style-type: none;
    font-weight: bold;

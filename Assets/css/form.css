@@ -43,16 +43,16 @@
  }
 
  .maggiesblog{
-   color: rgb(160, 112, 120);
+   color: beige;
    display: inline-block;
-   margin-left: 50px;
+   font-size: 50px;
  }
 
  .blogquestion{
-   color: rgb(160, 112, 120);
+   color: beige;
    display: inline-block;
-   margin-left: 500px;
-   font-size: 30px;
+   margin-left: 200px;
+   font-size: 45px;
  }
 
  main {
@@ -81,7 +81,9 @@ form {
    margin-left: 600px;
 }
 
+
 ul {
+   color :rgb(160, 112, 120)
    list-style-type: none;
    flex-direction: column;
    display: flex;
