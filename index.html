@@ -4,6 +4,9 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Maggie's Blog</title>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Playpen+Sans:wght@100..800&display=swap" rel="stylesheet">
    <link rel="stylesheet" href = "./Assets/css/form.css">
 </head>
 
@@ -11,12 +14,12 @@
 
 
 <body>
-   <header>
+   <header class = "header">
       <div class="thick-line"></div>
       <div class="container"></div> 
-      <div class="sun">&#127775</div>
       <h1 class = "maggiesblog">Maggie's Blog</h1>
       <h2 class = "blogquestion">What would you like to blog about?</h2>
+      <div class="sun">&#127775</div>
    </header>
 
    <main>
@@ -29,15 +32,15 @@
          <ul>
            <li>
              <label class="text-right" for="username">User Name:</label>
-             <input type="text" id="name" name="user-name">
+             <input type="text" id="name" name="user-name" required>
            </li>
            <li>
              <label class="text-right" for="Title">Title:</label>
-             <input type="text" id="title" name="title">
+             <input type="text" id="title" name="title" required>
            </li>
            <li>
              <label class="text-right" for="Content">Content:</label>
-             <input type="text" id="content" name="content">
+             <textarea type="text" id="content" name="content" required></textarea>
            </li>
         </ul>
          <div class="text-center">

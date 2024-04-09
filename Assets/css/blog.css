@@ -3,18 +3,33 @@
    padding:0; 
  }
 
+ .dark {
+  background-color: rgb(89, 58, 63)
+}
+
  header {
   display: block;
-  border-bottom: 7px solid black;
+  border-bottom: 7px solid rgb(160, 112, 120);
   display: flex;
   justify-content: space-around;
   align-items: center;
+  font-family: "Caveat", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 }
 
-
- body {
+body {
    background-color: tan;
- }
+  font-family: "Playpen Sans", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.firstName, .firstTitle, .firstContent {
+  color: rgb(160, 112, 120);
+}
 
 
  .sun {
@@ -26,7 +41,7 @@
 }
 
  .btn {
-   background-color: darkgreen;
+   background-color: rgb(160, 112, 120);
    border: none;
    color: beige;
    padding: 10px 20px;
@@ -49,7 +64,7 @@
  }
 
 .container {
-   border: 3px solid black; /* Border around the container */
+   border: 3px solid rgb(160, 112, 120); /* Border around the container */
    padding: 10px; /* Add padding inside the container for spacing */
    margin: 5px;
    margin-top: 15px;
@@ -61,17 +76,23 @@ h2, div {
 
  h2 {
    display: block; /* Make the h2 a block-level element */
-   border-bottom: 1px solid black; /* Add a bottom border to create the underline effect */
+   border-bottom: 1px solid rgb(160, 112, 120); /* Add a bottom border to create the underline effect */
    margin-bottom: 10px; /* Add some space below the h2 */
  }
 
+ h3 .madewith {
+  color: rgb(160, 112, 120)
+ }
+
  .madewith {
+   color: rgb(160, 112, 120);
    padding: 10px;
    display: flex;
    justify-content: center;
  }
 
  ul, li {
+   color: rgb(160, 112, 120);
    padding: 10px;
    list-style-type: none;
    font-weight: bold;
@@ -79,5 +100,7 @@ h2, div {
 
  footer {
    display: block;
-   border-top: 7px solid black;
+   border-top: 7px solid rgb(160, 112, 120);
  }
+
+ 

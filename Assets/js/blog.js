@@ -1,61 +1,71 @@
-let blogData = JSON.parse(localStorage.getItem("blogData"))
-console.log(blogData)
+const mainTag = document.querySelector("main");
 
-// for (let i = 0; i < blogData.length; i++) {
-//    console.log(`${i + 1}) ${blogData[i]}`);
-// }
+let blogData = JSON.parse(localStorage.getItem("blogData"));
+console.log(blogData);
+
+/*
+<div class="container">
+         <h2 class = "firstTitle">Blog Title</h2>
+          <p class = "firstContent">here is my content </p>
+          <p class = "firstName">Posted by:</p>
+    </div>
+*/
+
+/* { title: "usgcudsgcu", content: "ugcvydgcd", userName: "ugcvydtcf7edgc" } */
+
+function renderBlogEntries() {
+  for (let i = 0; i < blogData.length; i++) {
+    const article = blogData[i];
+
+    const container = document.createElement("div");
+    container.classList.add("container");
+
+    const h2Tag = document.createElement("h2"); // create the h2 tag
+    h2Tag.classList.add("firstTitle"); // give it a class (if needed)
+    h2Tag.textContent = article.title; //put the content in for the tag
+    container.appendChild(h2Tag); // add the tag to the container div
+
+    const pTag = document.createElement("p");
+    pTag.classList.add("firstContent");
+    pTag.textContent = article.content;
+    container.appendChild(pTag);
+
+    const pTag2 = document.createElement("p");
+    pTag2.classList.add("firstName");
+    pTag2.textContent = "Posted by: " + article.userName;
+    container.appendChild(pTag2);
+
+    // You do the next two
+
+    // append everything to the main tag
+    mainTag.appendChild(container);
+  }
+}
+
+renderBlogEntries();
 
 
+//Dark to light mode 
+const body = document.querySelector("body")
+const star = document.querySelector(".sun")
+let mode = "dark";
+
+star.addEventListener("click", function() {
+  if (mode === 'dark') {
+    mode = 'light';
+    body.setAttribute('class', 'light');
+  }   else {
+    mode = 'dark';
+    body.setAttribute('class', 'dark');
+  }
+});
 
 
+//back button
+const btn = document.querySelector("button")
+
+btn.addEventListener("click", function(){
+   window.location.href = "./index.html"
+})
 
 
-
-// //This is for the first blog entry
-// const userData = JSON.parse(localStorage.getItem("userData"))
-// console.log(userData);
-// const blogTitle = document.querySelector(".firstTitle")
-// blogTitle.textContent = userData.title
-// const blogContent = document.querySelector(".firstContent")
-// blogContent.textContent = userData.content
-// const blogName = document.querySelector(".firstName")
-// blogName.textContent = "Posted by: " + userData.userName
-
-
-// //This is for the second blog entry
-// const userData2 = JSON.parse(localStorage.getItem("userData2"))
-// console.log(userData2); if (userData2 !== null) {
-// const blogTitle2 = document.querySelector(".secondTitle")
-// blogTitle2.textContent = userData2.title
-// const blogContent2 = document.querySelector(".secondContent")
-// blogContent2.textContent = userData2.content
-// const blogName2 = document.querySelector(".secondName")
-// blogName2.textContent = "Posted by: " + userData2.userName
-// }
-
-// //This is for the third blog entry
-// const userData3 = JSON.parse(localStorage.getItem("userData3"))
-// console.log(userData3); if (userData3 !== null) {
-// const blogTitle3 = document.querySelector(".thirdTitle")
-// blogTitle3.textContent = userData3.title
-// const blogContent3 = document.querySelector(".thirdContent")
-// blogContent3.textContent = userData3.content
-// const blogName3 = document.querySelector(".thirdName")
-// blogName3.textContent = "Posted by: " + userData3.userName
-// }
-
-// //This is for the fouth blog entry
-// const userData4 = JSON.parse(localStorage.getItem("userData4"))
-// console.log(userData4); if (userData4 !== null) {
-// const blogTitle4 = document.querySelector(".fourthTitle")
-// blogTitle4.textContent = userData4.title
-// const blogContent4 = document.querySelector(".fourthContent")
-// blogContent4.textContent = userData4.content
-// const blogName4 = document.querySelector(".fourthName")
-// blogName4.textContent = "Posted by: " + userData4.userName
-// }
-
-// const backbutton = document.querySelector("#back-button");
-// backbutton.addEventListener("click", function(){
-//    window.location.href = "./index.html"
-// })
