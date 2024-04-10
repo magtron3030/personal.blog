@@ -9,7 +9,7 @@ This is a two page blog that is about aviation! On the first page you can fill o
 ##Links
 https://github.com/magtron3030/personal.blog
 
-
+https://magtron3030.github.io/personal.blog/
 
 
 
